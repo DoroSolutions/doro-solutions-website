@@ -1,88 +1,12 @@
-
-:root{--blue:#06467e;--gold:#e99500}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-a{color:inherit}
-.legal-footer{
-  min-height:24px;display:flex;align-items:center;justify-content:center;
-  gap:8px;padding:5px 12px;background:#fff;color:#647383;font-size:10.5px;
-}
-.legal-footer a{color:#06467e;text-decoration:none}
-
-/* ===== COURSES PAGE ===== */
-
-.courses-page{margin:0;background:#fff;color:#06467e;font-family:Arial,Helvetica,sans-serif;overflow:auto}
-.courses-header{height:82px;display:grid;grid-template-columns:300px 1fr 150px;align-items:center;padding:0 5.2%;box-sizing:border-box;background:#fff}
-.courses-logo img{width:205px;display:block}
-.courses-nav{display:flex;justify-content:center;gap:46px}
-.courses-nav a{color:#003f75;text-decoration:none;font-size:16px;font-weight:600;padding:29px 0 10px;position:relative}
-.courses-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:3px;height:2px;background:#e99500}
-.courses-lang{justify-self:end;background:#f3f3f3;border-radius:11px;padding:10px 14px;display:flex;gap:9px;align-items:center}
-.courses-lang button{border:0;background:none;color:#003f75;font-size:15px;cursor:pointer;padding:0}
-.courses-lang button.active{color:#e99500}
-.courses-main{padding:25px 2.6% 10px}
-.courses-intro{min-height:230px;display:grid;grid-template-columns:1fr .9fr;align-items:center;padding:0 3%;position:relative;overflow:hidden}
-.courses-intro:after{content:"";position:absolute;width:540px;height:280px;border-radius:50%;right:-60px;top:-70px;background:linear-gradient(135deg,rgba(230,244,252,.55),rgba(255,255,255,0));z-index:0}
-.courses-intro>div{position:relative;z-index:1}
-.eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;margin-bottom:8px}
-.eyebrow:before{content:"";display:inline-block;width:42px;height:2px;background:#e99500;margin-right:12px;vertical-align:middle}
-.courses-intro h1{font-family:Georgia,"Times New Roman",serif;font-size:50px;line-height:.95;margin:0;color:#06467e}
-.courses-intro h1 em{font-style:normal;color:#e99500}
-.courses-intro p{max-width:630px;font-size:17px;line-height:1.35;margin:14px 0 0}
-.courses-script{font-family:"Segoe Script","Brush Script MT",cursive;font-size:34px;line-height:1.05;text-align:center;transform:rotate(-5deg);color:#06467e}
-.courses-script span{border-bottom:2px solid #e99500;padding-bottom:5px}
-.course-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:8px}
-.course-tile{min-height:390px;border-radius:14px;padding:20px 24px 18px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(0,50,90,.035)}
-.course-tile.cream{background:linear-gradient(145deg,#fffaf2,#fffdf9)}
-.course-tile.blue{background:linear-gradient(145deg,#f1f9fd,#eaf6fc)}
-.coming{align-self:center;border-radius:16px;background:rgba(255,255,255,.75);padding:7px 15px;font-size:11px;font-weight:800;color:#b86f00;margin-bottom:18px}
-.blue .coming{color:#06467e;background:#dceff9}
-.course-tile h2{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.02;margin:0 0 10px;color:#06467e}
-.course-tile h3{font-size:15px;line-height:1.25;margin:0 0 13px;color:#06467e;font-weight:700}
-.language{align-self:flex-start;border-radius:12px;background:#fff1dc;color:#b86f00;font-size:11px;font-weight:800;padding:5px 11px;margin-bottom:12px}
-.blue .language{background:#dceff9;color:#06467e}
-.course-tile p{font-size:14px;line-height:1.38;margin:0;color:#315a7d}
-.course-links{margin-top:auto;display:flex;align-items:center;gap:12px;padding-top:16px;white-space:nowrap}
-.course-links a{text-decoration:none;font-size:13px;font-weight:700;color:#0060a5}
-.course-links .buy{color:#d98600}
-.course-links>span{width:1px;height:20px;background:#d7b06d}
-.course-links .disabled{opacity:.62}
-.courses-cta{min-height:108px;margin-top:16px;border-radius:14px;background:linear-gradient(120deg,#e8f5fc,#f5fbfe);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:relative;overflow:hidden}
-.courses-cta:after{content:"";position:absolute;width:420px;height:140px;border-radius:50%;right:-70px;bottom:-85px;border:20px solid rgba(203,230,246,.42)}
-.courses-cta>div,.courses-cta>a{position:relative;z-index:1}
-.courses-cta b{font-family:Georgia,"Times New Roman",serif;font-size:30px}
-.courses-cta p{margin:4px 0 0;font-size:14px}
-.courses-cta>a{color:#d98600;text-decoration:none;font-weight:700;border-bottom:2px solid #e99500;padding:8px 4px}
-.courses-page .legal-footer{margin-top:8px}
-@media(max-width:1000px){
- .courses-header{grid-template-columns:210px 1fr 110px;padding:0 3%}
- .courses-logo img{width:170px}.courses-nav{gap:18px}
- .course-grid{grid-template-columns:repeat(2,1fr)}
- .courses-intro{grid-template-columns:1fr}.courses-script{display:none}
-}
-@media(max-width:650px){
- .courses-header{height:auto;grid-template-columns:1fr auto;padding:10px 5%}.courses-nav{grid-column:1/-1;order:3;overflow-x:auto;justify-content:flex-start;padding-top:6px}
- .courses-nav a{padding:8px 0}.courses-main{padding:15px 4%}.courses-intro{padding:15px 0;min-height:auto}
- .courses-intro h1{font-size:38px}.course-grid{grid-template-columns:1fr}.course-tile{min-height:330px}
- .courses-cta{align-items:flex-start;flex-direction:column;padding:22px}.courses-cta>a{margin-top:12px}
-}
-
-
-/* Compact desktop adjustment: keeps the approved look but reduces page height */
-@media(min-width:1001px){
-  .courses-header{height:72px}
-  .courses-logo img{width:190px}
-  .courses-nav a{padding-top:24px}
-  .courses-main{padding-top:12px}
-  .courses-intro{min-height:190px}
-  .courses-intro h1{font-size:46px}
-  .courses-intro p{margin-top:10px}
-  .course-tile{min-height:350px;padding-top:17px;padding-bottom:14px}
-  .coming{margin-bottom:13px}
-  .course-tile h2{font-size:25px;margin-bottom:8px}
-  .course-tile h3{margin-bottom:10px}
-  .language{margin-bottom:9px}
-  .course-links{padding-top:11px}
-  .courses-cta{min-height:88px;margin-top:12px}
-  .courses-page .legal-footer{margin-top:4px}
-}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:#06467e;background:#fff}a{text-decoration:none;color:inherit}
+header{height:72px;padding:0 5%;display:grid;grid-template-columns:260px 1fr 120px;align-items:center;border-bottom:1px solid #f2f2f2}
+.logo img{width:190px;max-height:64px;object-fit:contain}nav{display:flex;justify-content:center;gap:42px}nav a{font-size:15px;font-weight:600;padding:25px 0 10px;position:relative}nav a.active:after{content:"";height:2px;background:#e99500;position:absolute;left:0;right:0;bottom:4px}
+.lang{justify-self:end;background:#f5f5f5;border-radius:10px;padding:9px 12px;display:flex;gap:8px}.lang button{border:0;background:none;color:#06467e;cursor:pointer}.lang button.active{color:#e99500;font-weight:700}
+main{padding:12px 2.7% 8px}.intro{height:185px;padding:0 3%;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;position:relative;overflow:hidden}.intro:after{content:"";position:absolute;width:520px;height:260px;border-radius:50%;right:-70px;top:-95px;background:linear-gradient(135deg,#eff9fd,rgba(255,255,255,0));z-index:0}.intro-copy,.script{position:relative;z-index:1}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.08em;margin-bottom:6px}.eyebrow:before{content:"";display:inline-block;width:38px;height:2px;background:#e99500;margin-right:10px;vertical-align:middle}
+h1{font:700 44px/.95 Georgia,serif;margin:0}h1 em{font-style:normal;color:#e99500}.intro p{font-size:15px;line-height:1.35;max-width:650px;margin:9px 0 0}.script{text-align:center;font:30px/1.05 "Segoe Script","Brush Script MT",cursive;transform:rotate(-4deg)}.script span{border-bottom:2px solid #e99500;padding-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px;margin-top:5px}.card{min-height:335px;border-radius:14px;padding:16px 21px 14px;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(0,50,90,.035)}.cream{background:linear-gradient(145deg,#fff9ef,#fffdf9)}.blue{background:linear-gradient(145deg,#f0f9fd,#eaf6fc)}
+.soon{align-self:center;font-size:10px;border-radius:14px;padding:6px 13px;background:rgba(255,255,255,.8);color:#b96e00;margin-bottom:12px}.blue .soon{background:#dcedf7;color:#06467e}.card h2{font:700 24px/1.03 Georgia,serif;margin:0 0 7px}.card h3{font-size:14px;line-height:1.25;margin:0 0 9px}.tag{align-self:flex-start;font-size:10px;border-radius:11px;padding:5px 10px;background:#fff0d8;color:#b96e00;margin-bottom:8px}.blue .tag{background:#dcedf7;color:#06467e}.card p{font-size:13px;line-height:1.35;margin:0;color:#315a7d}.links{margin-top:auto;padding-top:9px;display:flex;align-items:center;gap:10px;white-space:nowrap}.links a{font-size:12px;font-weight:700;color:#0060a5}.links .buy{color:#d98600}.links i{height:18px;width:1px;background:#d9b676}
+.cta{min-height:78px;margin-top:10px;padding:12px 4%;border-radius:13px;background:linear-gradient(120deg,#e9f6fc,#f7fcfe);display:flex;align-items:center;justify-content:space-between}.cta h2{font:700 25px Georgia,serif;margin:0}.cta p{font-size:12px;margin:3px 0 0}.cta>a{font-size:13px;font-weight:700;color:#d98600;border-bottom:2px solid #e99500;padding:6px 2px}
+footer{height:25px;display:flex;align-items:center;justify-content:center;font-size:10px;color:#697987}footer a{color:#06467e}
+@media(max-width:1050px){header{grid-template-columns:200px 1fr 105px;padding:0 3%}.logo img{width:165px}nav{gap:18px}.grid{grid-template-columns:repeat(2,1fr)}.intro{height:auto;min-height:170px}.script{display:none}}
+@media(max-width:650px){header{height:auto;grid-template-columns:1fr auto;padding:10px 5%}nav{grid-column:1/-1;order:3;justify-content:flex-start;gap:22px;overflow-x:auto}nav a{padding:9px 0}main{padding:12px 4%}.intro{padding:18px 0}.intro h1{font-size:37px}.grid{grid-template-columns:1fr}.card{min-height:300px}.cta{align-items:flex-start;flex-direction:column;gap:10px;padding:18px}footer{height:auto;min-height:34px;flex-wrap:wrap;padding:7px 10px;text-align:center}}
