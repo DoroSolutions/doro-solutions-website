@@ -54,3 +54,80 @@ nav{gap:45px}
  .hero{height:480px}.copy{top:135px}.cards{gap:10px}.service-card,.course-card{height:auto;min-height:275px;border-radius:10px}
  .contactbar{height:auto}.contactlead{height:auto}
 }
+
+/* ===== V4 precision adjustments ===== */
+
+/* Header: restore clear spacing while keeping EN/ES separate */
+.header-actions{gap:22px}
+.nav-shell{gap:44px;padding:2px 18px}
+nav{gap:0}
+.nav-shell a{display:block;white-space:nowrap}
+
+/* Slide numbers: clean typography, no individual button boxes */
+.dots{gap:24px}
+.dots button,
+.dots button.active{
+  background:transparent;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  border-radius:0;
+  padding:5px 2px;
+}
+.dots button.active{border-bottom:2px solid var(--gold)}
+
+/* Use the available vertical room instead of leaving white space below */
+.cards{padding-top:8px;padding-bottom:7px}
+.service-card,.course-card{height:264px}
+
+/* Services: larger icons and vertically balanced content */
+.service-items{
+  margin:10px 0 12px;
+  align-items:center;
+}
+.service-items>div{
+  height:94px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.service-items svg{
+  width:49px;
+  height:49px;
+  margin:0 auto 5px;
+}
+.taxicon text{font-size:7px}
+.taxicon text:last-child{font-size:5.3px}
+.service-card .small{margin-top:0}
+
+/* Courses: make supporting copy quieter */
+.course-card h3{margin-top:7px;margin-bottom:6px}
+.course-card p{
+  font-size:13.5px;
+  line-height:1.12;
+  margin-bottom:9px;
+}
+.course-card .cap{top:69px}
+
+/* Contact fills the remaining desktop height without becoming bulky */
+.contactbar{
+  height:126px;
+  margin-bottom:0;
+}
+.contactlead{height:88px}
+.contactpiece{height:76px}
+
+/* Desktop target: fit the 100% viewport without forcing a scrollbar */
+@media(min-width:1200px) and (min-height:700px){
+  main{min-height:100vh}
+  body{overflow-y:hidden}
+}
+
+/* Preserve mobile behavior */
+@media(max-width:800px){
+  body{overflow:auto}
+  .header-actions{gap:8px}
+  .nav-shell{gap:0}
+  .service-card,.course-card{height:auto;min-height:275px}
+  .contactbar{height:auto}
+}
