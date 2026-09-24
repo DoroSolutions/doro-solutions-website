@@ -2,116 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DORO Solutions provides tax services, bookkeeping, administrative support, notary public services, and professional training.">
-  <title>DORO Solutions | Professional Services & Training</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DORO Solutions — tax preparation, bookkeeping, administrative support, notary public and professional courses.">
+  <title>DORO Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="DORO Solutions home"><img src="images/doro-logo.jpg" alt="DORO Solutions"></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="courses.html">Courses</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn btn-gold nav-cta" href="contact.html">Get Started</a>
-    </nav>
-  </div>
+  <a class="brand" href="#home" aria-label="DORO Solutions home"><img src="images/doro-logo.jpg" alt="DORO Solutions"></a>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a><a href="#courses" data-i18n="navCourses">Courses</a><a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+  <div class="lang" aria-label="Language"><button class="active" data-lang="en">EN</button><span>|</span><button data-lang="es">ES</button></div>
 </header>
 
-<main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">PROFESSIONAL SERVICES • PRACTICAL SUPPORT</p>
-      <h1>Professional Solutions for <span>You & Your Business</span></h1>
-      <p class="lead">Tax, bookkeeping, administrative, and notary services designed to make your personal and business needs easier.</p>
-      <div class="actions">
-        <a class="btn btn-gold" href="services.html">Explore Our Services</a>
-        <a class="text-link" href="contact.html">Contact Us <span>→</span></a>
-      </div>
-    </div>
-    <div class="hero-card" aria-label="DORO Solutions service overview">
-      <div class="gold-line"></div>
-      <p class="small-label">DORO SOLUTIONS</p>
-      <h2>Support that helps you stay organized and move forward.</h2>
-      <div class="mini-grid">
-        <span>Tax Services</span><span>Bookkeeping</span><span>Admin Support</span><span>Notary Public</span>
-      </div>
-    </div>
-  </div>
+<main id="home">
+<section class="hero" aria-label="Featured">
+  <article class="slide active slide-one">
+    <div class="hero-copy"><h1><span data-i18n="hero1a">Solutions That</span><strong data-i18n="hero1b">Move You Forward.</strong></h1><a class="btn" href="#contact" data-i18n="contactUs">Contact Us →</a></div>
+    <div class="target-art" aria-hidden="true"><div class="target"><i></i><b></b></div><div class="arrow"><span></span></div></div>
+  </article>
+  <article class="slide slide-two">
+    <div class="hero-copy"><h1><span data-i18n="taxTitle1">Tax Season</span><strong data-i18n="taxTitle2">Is Coming.</strong></h1><p data-i18n="taxText">Start getting organized now and be ready for a smoother tax season.</p><a class="btn" href="#contact" data-i18n="taxCta">Get Prepared →</a></div>
+    <div class="tax-art" aria-hidden="true"><div class="calendar"><span>TAX SEASON</span><b>✓</b></div><div class="tax-paper">1040<div></div><div></div><div></div></div></div>
+  </article>
+  <article class="slide slide-three">
+    <div class="hero-copy"><h1><span data-i18n="coursesTitle">Our</span><strong data-i18n="coursesWord">Courses.</strong></h1><p data-i18n="coursesHeroText">Learn, grow and build new opportunities.</p><a class="btn" href="#courses" data-i18n="exploreCourses">Explore Courses →</a></div>
+    <div class="course-art" aria-hidden="true"><div class="cap">◇<i></i></div><div class="books"><span></span><span></span><span></span></div></div>
+  </article>
+  <button class="hero-arrow prev" aria-label="Previous slide">‹</button><button class="hero-arrow next" aria-label="Next slide">›</button>
+  <div class="dots" aria-label="Carousel navigation"><button class="active" data-slide="0">01</button><button data-slide="1">02</button><button data-slide="2">03</button></div>
 </section>
 
-<section class="section services-preview">
-  <div class="container">
-    <div class="section-heading centered">
-      <p class="eyebrow">WHAT WE DO</p>
-      <h2>Professional Services</h2>
-      <p>Practical support for individuals, entrepreneurs, and growing businesses.</p>
-    </div>
-    <div class="cards four">
-      <article class="service-card"><div class="icon">$</div><h3>Tax Services</h3><p>Individual and business tax preparation with organized, attentive support.</p><a href="services.html#tax">Learn More →</a></article>
-      <article class="service-card"><div class="icon">▤</div><h3>Bookkeeping</h3><p>Keep your financial records organized and your business information up to date.</p><a href="services.html#bookkeeping">Learn More →</a></article>
-      <article class="service-card"><div class="icon">✓</div><h3>Administrative Support</h3><p>Reliable administrative assistance to help your business stay organized.</p><a href="services.html#admin">Learn More →</a></article>
-      <article class="service-card"><div class="icon">✦</div><h3>Notary Public</h3><p>Professional notary services with convenient and careful document handling.</p><a href="services.html#notary">Learn More →</a></article>
-    </div>
-  </div>
+<section class="feature-grid">
+  <article class="feature-card" id="services"><h2 data-i18n="ourServices">Our Services</h2><div class="service-list">
+    <a href="#contact"><span class="icon">▤</span><b data-i18n="taxPrep">Tax Preparation</b></a>
+    <a href="#contact"><span class="icon">▦</span><b data-i18n="bookkeeping">Bookkeeping</b></a>
+    <a href="#contact"><span class="icon">♙</span><b data-i18n="adminSupport">Administrative Support</b></a>
+    <a href="#contact"><span class="icon">✎</span><b data-i18n="notary">Notary Public</b></a>
+  </div><a class="btn small" href="#contact" data-i18n="viewServices">View All Services →</a></article>
+  <article class="feature-card courses-card" id="courses"><div><h2 data-i18n="ourCourses">Our Courses</h2><h3 data-i18n="courseTag">Learn, Grow and Build New Opportunities.</h3><p data-i18n="courseCopy">Practical courses designed to give you knowledge and skills to move forward with confidence.</p><a class="btn small" href="#contact" data-i18n="exploreCourses">Explore Courses →</a></div><div class="cap-icon" aria-hidden="true">◇<i></i></div></article>
 </section>
 
-<section class="section courses-preview">
-  <div class="container split">
-    <div>
-      <p class="eyebrow">LEARN & GROW WITH DORO</p>
-      <h2>Courses & Professional Training</h2>
-      <p class="lead smaller">Explore training programs and resources that can help you build practical skills and new professional opportunities.</p>
-      <a class="btn btn-gold" href="courses.html">Explore Courses</a>
-    </div>
-    <div class="course-list">
-      <div><strong>Tax Preparation</strong><span>Training & resources</span></div>
-      <div><strong>Notary</strong><span>Professional education</span></div>
-      <div><strong>Insurance</strong><span>Career development</span></div>
-      <div><strong>More Coming Soon</strong><span>DORO learning library</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section why">
-  <div class="container split why-grid">
-    <div class="why-panel">
-      <span class="large-mark">D</span>
-      <p>Professional service with a personal approach.</p>
-    </div>
-    <div>
-      <p class="eyebrow">WHY DORO</p>
-      <h2>Clear. Reliable. Professional.</h2>
-      <p>Our goal is to make essential business and personal services easier to understand and manage.</p>
-      <div class="check-grid"><span>✓ Personalized support</span><span>✓ Organized process</span><span>✓ Practical solutions</span><span>✓ Professional service</span></div>
-      <a class="text-link dark" href="about.html">Learn About DORO →</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container cta-inner">
-    <div><p class="eyebrow light">READY TO GET STARTED?</p><h2>Let’s find the right solution for you.</h2></div>
-    <a class="btn btn-gold" href="contact.html">Contact Us</a>
-  </div>
+<section class="contact-band" id="contact">
+  <div class="contact-intro"><span class="bubble">•••</span><div><h2 data-i18n="contactUsPlain">Contact Us</h2><h3 data-i18n="speakSpanish">Hablamos Español</h3><p data-i18n="hereHelp">Estamos aquí para ayudarte.</p></div></div>
+  <a class="contact-item" href="mailto:doro@dorosolutions.com"><span>✉</span><div><b data-i18n="emailUs">Email Us</b><small>doro@dorosolutions.com</small></div></a>
+  <a class="contact-item" href="mailto:doro@dorosolutions.com?subject=Consultation%20Request"><span>▣</span><div><b data-i18n="schedule">Schedule an Appointment</b><small data-i18n="readyHelp">We’re ready to help.</small></div></a>
 </section>
 </main>
-
-<footer>
-  <div class="container footer-grid">
-    <div class="footer-brand"><img src="images/doro-logo.jpg" alt="DORO Solutions"><p>Professional services and practical support for individuals and businesses.</p></div>
-    <div><strong>Company</strong><a href="about.html">About</a><a href="contact.html">Contact</a></div>
-    <div><strong>Explore</strong><a href="services.html">Services</a><a href="courses.html">Courses</a></div>
-    <div><strong>Website</strong><span>dorosolutions.com</span></div>
-  </div>
-  <div class="container copyright">© <span id="year"></span> DORO Solutions. All rights reserved.</div>
-</footer>
+<footer><span>© 2026 DORO Solutions LLC</span></footer>
 <script src="js/script.js"></script>
-</body>
-</html>
+</body></html>
