@@ -1,10 +1,9 @@
-# DORO Solutions V4
+# DORO Solutions V5
 
-Precision update from V3:
-- Restored proper spacing between Home / Services / Courses / About / Contact.
-- EN | ES remains a separate translucent control.
-- Removed the little boxes behind 01 / 02 / 03.
-- Increased and vertically centered the four service icons.
-- Reduced the supporting paragraph under Our Courses.
-- Reused the extra white space at the bottom by slightly increasing the Services/Courses and Contact areas.
-- Desktop remains targeted to fit at 100% without vertical scrolling.
+Only four Home adjustments from V4:
+1. Lowered View All Services and Explore Courses buttons.
+2. Removed “We're ready to help.”
+3. Reduced the blue Contact strip height.
+4. Added a small legal footer with working Privacy Policy and Terms of Service links.
+
+No other Home layout elements were intentionally changed.

@@ -131,3 +131,49 @@ nav{gap:0}
   .service-card,.course-card{height:auto;min-height:275px}
   .contactbar{height:auto}
 }
+
+/* ===== V5: four final Home adjustments only ===== */
+
+/* 1. Lower the two orange buttons slightly */
+.service-card .btn.small,
+.course-card .btn.small{
+  transform:translateY(10px);
+}
+
+/* 3. Thinner Contact strip and vertically centered contents */
+.contactbar{
+  height:98px;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+.contactlead{height:72px}
+.contactpiece{height:62px}
+
+/* 4. Small legal footer */
+.legal-footer{
+  height:26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:0 14px;
+  background:#fff;
+  color:#647383;
+  font-size:11px;
+  line-height:1;
+  white-space:nowrap;
+}
+.legal-footer a{color:var(--blue)}
+.legal-footer a:hover{text-decoration:underline}
+.legal-footer .sep{color:#b8c0c7}
+
+/* Legal page placeholders */
+.legal-page{max-width:900px;margin:70px auto;padding:0 24px;color:var(--blue)}
+.legal-page h1{font:700 42px "Playfair Display",Georgia,serif}
+.legal-page>a{color:var(--gold);font-weight:600}
+
+@media(max-width:800px){
+ .service-card .btn.small,.course-card .btn.small{transform:none}
+ .contactbar{height:auto}
+ .legal-footer{height:auto;min-height:38px;flex-wrap:wrap;padding:8px 12px}
+}
