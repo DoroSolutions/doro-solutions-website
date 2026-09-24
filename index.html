@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DORO Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+ <a class="logo" href="#home"><img src="assets/logo.png" alt="DORO Solutions"></a>
+ <button class="menu" aria-label="Menu">☰</button>
+ <div class="nav-shell">
+  <nav>
+   <a class="active" href="#home" data-i="home">Home</a><a href="#services" data-i="services">Services</a>
+   <a href="#courses" data-i="courses">Courses</a><a href="#about" data-i="about">About</a><a href="#contact" data-i="contact">Contact</a>
+  </nav>
+  <div class="lang"><button class="active" data-lang="en">EN</button><i></i><button data-lang="es">ES</button></div>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <article class="slide active" style="--bg:url('assets/slide-01.png')">
+  <div class="copy"><h1><span data-i="s1a">Solutions That</span><strong data-i="s1b">Move You Forward.</strong></h1><div class="rule"></div>
+  <p data-i="s1p">Professional services and practical education<br>to help you achieve your goals.</p>
+  <a class="btn" href="#contact"><span data-i="s1btn">Contact Us</span> →</a></div>
+ </article>
+ <article class="slide" style="--bg:url('assets/slide-02.png')">
+  <div class="copy"><h1><span data-i="s2a">Tax Season</span><strong data-i="s2b">Is Coming.</strong></h1><div class="rule"></div>
+  <p data-i="s2p">Get professional tax preparation and support<br>you can trust.</p>
+  <a class="btn" href="#services"><span data-i="s2btn">Learn More</span> →</a></div>
+ </article>
+ <article class="slide" style="--bg:url('assets/slide-03.png')">
+  <div class="copy"><h1><span><span data-i="s3a">Our</span> <em data-i="s3b">Courses.</em></span></h1><div class="rule"></div>
+  <p data-i="s3p">Learn, grow and build new opportunities.</p>
+  <a class="btn" href="#courses"><span data-i="s3btn">Explore Courses</span> →</a></div>
+ </article>
+ <button class="arrow prev" aria-label="Previous">‹</button><button class="arrow next" aria-label="Next">›</button>
+ <div class="dots"><button class="active">01</button><button>02</button><button>03</button></div>
+</section>
+
+<section class="cards">
+ <article class="service-card" id="services">
+  <div class="topline"></div><h2 data-i="ourServices">Our Services</h2>
+  <div class="service-items">
+   <div><svg viewBox="0 0 64 64"><path d="M18 6h22l8 8v44H18zM40 6v10h8M24 27h18M24 35h18M24 43h13"/></svg><b data-i="taxPrep">Tax<br>Preparation</b></div>
+   <div><svg viewBox="0 0 64 64"><rect x="13" y="7" width="38" height="50" rx="3"/><path d="M19 14h26v10H19zM20 32h5M30 32h5M40 32h5M20 41h5M30 41h5M40 41h5M20 50h5M30 50h5M40 50h5"/></svg><b data-i="bookkeeping">Bookkeeping</b></div>
+   <div><svg viewBox="0 0 64 64"><circle cx="32" cy="19" r="8"/><circle cx="16" cy="26" r="6"/><circle cx="48" cy="26" r="6"/><path d="M20 51V40c0-8 5-13 12-13s12 5 12 13v11M5 51V40c0-6 4-10 10-10M59 51V40c0-6-4-10-10-10"/></svg><b data-i="admin">Administrative<br>Support</b></div>
+   <div><svg viewBox="0 0 64 64"><path d="M17 6h29v48H17zM23 17h17M23 26h17M23 35h11"/><path d="M39 45l12-12 6 6-12 12-8 2z"/></svg><b data-i="notary">Notary Public</b></div>
+  </div>
+  <a class="btn small" href="#"><span data-i="viewServices">View All Services</span> →</a>
+ </article>
+
+ <article class="course-card" id="courses">
+  <div class="wave w1"></div><div class="wave w2"></div>
+  <div class="topline"></div><h2 data-i="ourCourses">Our Courses</h2>
+  <h3 data-i="courseTitle">Learn, Grow and<br>Build New Opportunities.</h3>
+  <p data-i="courseP">Practical courses designed to give you the knowledge<br>and skills to move forward with confidence.</p>
+  <a class="btn small" href="#"><span data-i="explore">Explore Courses</span> →</a>
+  <svg class="cap" viewBox="0 0 160 120"><path d="M15 43L80 12l65 31-65 31z"/><path d="M42 58v28c20 17 56 17 76 0V58M145 44v43"/><circle cx="145" cy="92" r="5"/></svg>
+ </article>
+</section>
+
+<section class="contactbar" id="contact">
+ <div class="contactlead">
+  <svg class="chat" viewBox="0 0 100 80"><path d="M12 12h76v47H45L25 72l4-13H12z"/><circle cx="38" cy="36" r="4"/><circle cx="50" cy="36" r="4"/><circle cx="62" cy="36" r="4"/></svg>
+  <div><h2 data-i="contactUs">Contact Us</h2><h3 data-i="speakSpanish">We Speak Spanish</h3><p data-i="hereHelp">We're here to help.</p></div>
+ </div>
+ <div class="contactpiece">
+  <svg viewBox="0 0 64 64"><rect x="8" y="14" width="48" height="36" rx="2"/><path d="M9 17l23 19 23-19"/></svg>
+  <div><p data-i="sendEmail">Send us an email</p><a href="mailto:doro@dorosolutions.com">doro@dorosolutions.com</a></div>
+ </div>
+ <div class="contactpiece">
+  <svg viewBox="0 0 64 64"><rect x="8" y="13" width="48" height="43" rx="3"/><path d="M8 25h48M19 7v13M45 7v13M19 34h5M30 34h5M41 34h5M19 44h5M30 44h5M41 44h5"/></svg>
+  <div><p data-i="appointment">Schedule an appointment</p><span data-i="ready">We're ready to help.</span></div>
+ </div>
+</section>
+<section id="about"></section>
+</main>
+<script src="script.js"></script>
+</body></html>
