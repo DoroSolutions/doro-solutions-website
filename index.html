@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DORO Solutions</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -10,11 +11,11 @@
 </head>
 <body>
 <header class="header">
- <a class="logo" href="#home"><img src="assets/logo.png" alt="DORO Solutions"></a>
+ <a class="logo" href="index.html"><img src="assets/logo.png" alt="DORO Solutions"></a>
  <button class="menu" aria-label="Menu">☰</button>
  <div class="header-actions">
   <nav class="nav-shell">
-   <a class="active" href="#home" data-i="home">Home</a><a href="services.html" data-i="services">Services</a>
+   <a class="active" href="index.html" data-i="home">Home</a><a href="services.html" data-i="services">Services</a>
    <a href="courses.html" data-i="courses">Courses</a><a href="about.html" data-i="about">About</a><a href="contact.html" data-i="contact">Contact</a>
   </nav>
   <div class="lang"><button class="active" data-lang="en">EN</button><i></i><button data-lang="es">ES</button></div>
@@ -51,7 +52,7 @@
    <div><svg viewBox="0 0 64 64"><circle cx="32" cy="19" r="8"/><circle cx="16" cy="26" r="6"/><circle cx="48" cy="26" r="6"/><path d="M20 51V40c0-8 5-13 12-13s12 5 12 13v11M5 51V40c0-6 4-10 10-10M59 51V40c0-6-4-10-10-10"/></svg><b data-i="admin">Administrative<br>Support</b></div>
    <div><svg class="notaryicon" viewBox="0 0 64 64"><path d="M14 5h34v51H14zM21 16h20M21 24h20"/><circle cx="39" cy="41" r="12"/><path d="M31 41h16M39 33v16M33 35l12 12M45 35L33 47"/></svg><b data-i="notary">Notary Public</b></div>
   </div>
-  <a class="btn small" href="#"><span data-i="viewServices">View All Services</span> →</a>
+  <a class="btn small" href="services.html"><span data-i="viewServices">View All Services</span> →</a>
  </article>
 
  <article class="course-card" id="courses">
@@ -71,11 +72,7 @@
  </div>
  <div class="contactpiece">
   <svg viewBox="0 0 64 64"><rect x="8" y="14" width="48" height="36" rx="2"/><path d="M9 17l23 19 23-19"/></svg>
-  <div><p data-i="sendEmail">Send us an email</p><a href="mailto:doro@dorosolutions.com">doro@dorosolutions.com</a></div>
- </div>
- <div class="contactpiece">
-  <svg viewBox="0 0 64 64"><rect x="8" y="13" width="48" height="43" rx="3"/><path d="M8 25h48M19 7v13M45 7v13M19 34h5M30 34h5M41 34h5M19 44h5M30 44h5M41 44h5"/></svg>
-  <div><p data-i="appointment">Schedule an appointment</p></div>
+  <div><a class="email-action" href="mailto:doro@dorosolutions.com"><span data-i="sendEmail">Send us an email</span><strong>doro@dorosolutions.com</strong></a></div>
  </div>
 </section>
 <footer class="legal-footer">
@@ -85,7 +82,6 @@
   <span class="sep">|</span>
   <a href="terms.html">Terms of Service</a>
 </footer>
-<section id="about"></section>
 </main>
 <script src="script.js"></script>
 </body></html>

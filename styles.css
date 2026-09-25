@@ -177,3 +177,10 @@ nav{gap:0}
  .contactbar{height:auto}
  .legal-footer{height:auto;min-height:38px;flex-wrap:wrap;padding:8px 12px}
 }
+
+/* Launch cleanup: Home contact bar now has only Contact + Email */
+.contactbar{grid-template-columns:1.25fr 1fr}
+.contactpiece:last-child{border-right:0}
+.email-action{display:flex!important;flex-direction:column;gap:4px;cursor:pointer}
+.email-action span,.email-action strong{color:#fff;font-size:15px}
+.email-action strong{font-weight:400}

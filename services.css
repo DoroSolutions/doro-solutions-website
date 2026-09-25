@@ -28,3 +28,8 @@ footer{height:25px;display:flex;align-items:center;justify-content:center;font-s
   .contact-main,.contact-item{height:58px}
   footer{height:21px}
 }
+
+/* Final launch cleanup */
+.work{grid-template-columns:80px 1fr}
+.contact{grid-template-columns:1.15fr .9fr}
+.contact-item:nth-child(2){border-right:0}
