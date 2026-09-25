@@ -8,27 +8,19 @@
   <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="DORO Solutions Home">
-      <img src="assets/logo.png" alt="DORO Solutions">
-    </a>
-
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-
-    <nav class="main-nav" aria-label="Main navigation">
+  <header>
+  <a class="logo" href="index.html"><img src="assets/logo.png" alt="DORO Solutions"></a>
+  <div class="header-actions">
+    <nav class="nav-shell">
       <a href="index.html" data-i18n="navHome">Home</a>
       <a href="services.html" data-i18n="navServices">Services</a>
       <a href="courses.html" data-i18n="navCourses">Courses</a>
       <a href="about.html" data-i18n="navAbout">About</a>
       <a class="active" href="contact.html" data-i18n="navContact">Contact</a>
     </nav>
-
-    <div class="language-switch" aria-label="Language selector">
-      <button class="lang active" data-lang="en" type="button">EN</button>
-      <span>|</span>
-      <button class="lang" data-lang="es" type="button">ES</button>
-    </div>
-  </header>
+    <div class="lang"><button class="active" data-lang="en" type="button">EN</button><i></i><button data-lang="es" type="button">ES</button></div>
+  </div>
+</header>
 
   <main>
     <section class="contact-hero">
@@ -69,6 +61,15 @@
         </a>
         <p class="response-note" data-i18n="responseNote">Professional support. Clear communication. Personalized service.</p>
       </aside>
+    </section>
+
+
+    <section class="appointment">
+      <div>
+        <p class="eyebrow" data-i18n="appointmentEyebrow">PREFER TO SCHEDULE AN APPOINTMENT?</p>
+        <h2 data-i18n="appointmentTitle">Choose a Time That Works for You.</h2>
+      </div>
+      <a class="schedule-button" href="#" data-i18n="scheduleButton">Schedule Now →</a>
     </section>
 
     <section class="cta">

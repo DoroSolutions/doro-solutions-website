@@ -10,6 +10,7 @@ const translations = {
     touchText:"Have a question about our services or courses? Send us an email and we’ll get back to you as soon as possible.",
     emailButton:"Email DORO Solutions",
     responseNote:"Professional support. Clear communication. Personalized service.",
+    appointmentEyebrow:"PREFER TO SCHEDULE AN APPOINTMENT?", appointmentTitle:"Choose a Time That Works for You.", scheduleButton:"Schedule Now →",
     ctaEyebrow:"READY WHEN YOU ARE", ctaTitle:"Let’s Move Forward Together.", ctaLink:"Contact Us →",
     footerTagline:"Professional Solutions. Personalized Service."
   },
@@ -24,27 +25,20 @@ const translations = {
     touchText:"¿Tienes preguntas sobre nuestros servicios o cursos? Envíanos un email y te responderemos lo antes posible.",
     emailButton:"Email a DORO Solutions",
     responseNote:"Apoyo profesional. Comunicación clara. Servicio personalizado.",
+    appointmentEyebrow:"¿PREFIERES PROGRAMAR UNA CITA?", appointmentTitle:"Elige el Horario que Funcione para Ti.", scheduleButton:"Programar Cita →",
     ctaEyebrow:"CUANDO ESTÉS LISTO", ctaTitle:"Sigamos Adelante Juntos.", ctaLink:"Contáctanos →",
     footerTagline:"Soluciones Profesionales. Servicio Personalizado."
   }
 };
 
-document.querySelectorAll(".lang").forEach(btn => {
+document.querySelectorAll(".lang button").forEach(btn => {
   btn.addEventListener("click", () => {
     const lang = btn.dataset.lang;
     document.documentElement.lang = lang;
-    document.querySelectorAll(".lang").forEach(b => b.classList.toggle("active", b === btn));
+    document.querySelectorAll(".lang button").forEach(b => b.classList.toggle("active", b === btn));
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.dataset.i18n;
       if (translations[lang][key]) el.textContent = translations[lang][key];
     });
   });
-});
-
-const menu = document.querySelector(".main-nav");
-const toggle = document.querySelector(".menu-toggle");
-toggle.addEventListener("click", () => {
-  const open = menu.classList.toggle("open");
-  toggle.setAttribute("aria-expanded", String(open));
-  toggle.textContent = open ? "×" : "☰";
 });
