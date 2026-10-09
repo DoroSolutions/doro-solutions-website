@@ -14,3 +14,29 @@ footer{height:25px;display:flex;align-items:center;justify-content:center;font-s
 /* Final launch cleanup */
 .contact{grid-template-columns:1.15fr .9fr}
 .contact-item:nth-child(2){border-right:0}
+
+
+}
+
+
+/* Flexible About page: footer follows the viewport, without stretched text. */
+html,body{min-height:100%;overflow-x:hidden}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+main{flex:1 0 auto;display:flex;flex-direction:column;justify-content:space-between;gap:clamp(8px,1.4dvh,24px)}
+footer{flex-shrink:0}
+@media(min-width:1051px){
+ .about{min-height:unset;padding-block:clamp(22px,4dvh,58px)}
+ .about h1{font-size:clamp(46px,3vw,67px)}
+ .forward{height:auto;min-height:clamp(88px,11dvh,145px)}
+ .contact{height:auto;min-height:clamp(82px,10dvh,130px)}
+}
+@media(max-width:1050px){main{display:block}}
+
+
+/* Keep the About sections together; unused height is distributed gently. */
+main{justify-content:flex-start;gap:clamp(20px,3.5vh,42px)}
+.about{min-height:0;padding-block:clamp(25px,4vh,48px)}
+.values{margin-top:clamp(22px,3vh,36px)}
+.forward{margin-top:auto}
+@media(min-width:1051px){.about{min-height:0}.forward{min-height:90px}.contact{min-height:88px}}
+@media(max-width:650px){main{display:block}.forward{margin-top:20px}}
